@@ -1,9 +1,11 @@
+import { Banner } from "./components/Banner";
+
 
 
 function App() {
   return (
     <header>
-      teste
+      <Banner/>
     </header>
   );
 }
