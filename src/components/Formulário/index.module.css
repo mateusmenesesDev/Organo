@@ -1,0 +1,12 @@
+.formDiv{
+    margin: 80px auto;
+    max-width: 789px;
+    padding: 33px 95px;
+    background-color: #F6F6F6;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+}
