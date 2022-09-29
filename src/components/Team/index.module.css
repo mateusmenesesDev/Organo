@@ -1,0 +1,21 @@
+.team {
+    padding: 32px;
+    text-align: center;
+}
+
+
+.team .title {
+    font-size: 32px;
+    border-bottom: 4px solid;
+    display: inline-block;
+    padding-bottom: 8px;
+    font-weight: 400;
+}
+
+.team .employee{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 32px;
+    flex-wrap: wrap;
+
+}

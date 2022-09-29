@@ -1,5 +1,6 @@
 import { Banner } from "./components/Banner";
 import { Formulario } from "./components/Formulário";
+import { Team } from "./components/Team";
 
 
 
@@ -18,7 +19,7 @@ function App() {
     <div>
       <header><Banner/></header>
       <Formulario teamList = {teamList}/>
-      <h3>Minha Organização:</h3>
+      <Team teamList={teamList}/>
     </div>
     
     
