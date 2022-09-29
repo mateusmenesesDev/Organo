@@ -1,0 +1,31 @@
+.footer {
+    display: block;
+    width: 100vw;
+    background-color: #6278F7;
+    background-image: url('../../../public/image/fundo.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 213px;
+}
+
+.footer .items {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    color:#FFF;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+a, a:visited {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer .items .social {
+    /* margin-left: 166px; */
+    display: flex;
+    gap: 35px;
+}

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Banner } from "./components/Banner";
+import { Footer } from "./components/Footer";
 import { Formulario } from "./components/Formulário";
 import { Team } from "./components/Team";
 
@@ -21,7 +22,7 @@ function App() {
   const addEmployee = (newEmployee)=>{
     setEmployee([...employee, newEmployee])
   }
-  console.log(employee)
+
   return (
     <div>
       <Banner/>
@@ -32,6 +33,7 @@ function App() {
         team={team} 
         employeeList={employee.filter((employee)=> employee.team === team.title)}/>
       ))}
+      <Footer/>
     </div>
   );
 }
