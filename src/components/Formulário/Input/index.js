@@ -1,11 +1,14 @@
 import style from './index.module.css'
 
-export const Input = ({title, placeholder})=>{
+export const Input = ({title, placeholder, value, onChange})=>{
+    function handleChange(event){
+        onChange(event.target.value)
+    }
     return(
         <div>
             <label className={style.labelStyle}>
             {title}
-            <input type='text' placeholder={placeholder}></input>
+            <input onChange={handleChange} value={value} type='text' placeholder={placeholder}></input>
             </label>
         </div>  
         

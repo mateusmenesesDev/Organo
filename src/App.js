@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Banner } from "./components/Banner";
 import { Formulario } from "./components/Formulário";
 import { Team } from "./components/Team";
@@ -15,11 +16,22 @@ function App() {
     {title: 'Inovação e Gestão', primaryColor: '#FF8A29', secundaryColor: '#FFEEDF'},
   
   ]
+
+  const[employee, setEmployee] = useState([])
+  const addEmployee = (newEmployee)=>{
+    setEmployee([...employee, newEmployee])
+  }
+  console.log(employee)
   return (
     <div>
-      <header><Banner/></header>
-      <Formulario teamList = {teamList}/>
-      <Team teamList={teamList}/>
+      <Banner/>
+      <Formulario teamList = {teamList} addSubmit={addEmployee}/>
+      {teamList.map((team)=>(
+      <Team 
+        key={team.title} 
+        team={team} 
+        employeeList={employee.filter((employee)=> employee.team === team.title)}/>
+      ))}
     </div>
     
     
