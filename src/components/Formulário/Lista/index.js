@@ -1,5 +1,5 @@
 import style from './index.module.css'
-export const Lista = ({teamList, value, onChange})=>{
+export const Lista = ({teamList, value, onChange, required})=>{
     function handleChange(event){
         onChange(event.target.value)
     }

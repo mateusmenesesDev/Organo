@@ -33,10 +33,6 @@ function App() {
         employeeList={employee.filter((employee)=> employee.team === team.title)}/>
       ))}
     </div>
-    
-    
-
-    
   );
 }
 

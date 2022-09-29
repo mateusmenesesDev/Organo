@@ -1,6 +1,6 @@
 import style from './index.module.css'
 
-export const Input = ({title, placeholder, value, onChange})=>{
+export const Input = ({title, placeholder, value, onChange, required})=>{
     function handleChange(event){
         onChange(event.target.value)
     }
@@ -8,7 +8,7 @@ export const Input = ({title, placeholder, value, onChange})=>{
         <div>
             <label className={style.labelStyle}>
             {title}
-            <input onChange={handleChange} value={value} type='text' placeholder={placeholder}></input>
+            <input onChange={handleChange} value={value} type='text' placeholder={placeholder} required={required}></input>
             </label>
         </div>  
         
